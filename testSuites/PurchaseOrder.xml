@@ -1,0 +1,22 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Suite">
+
+    <groups>
+        <run>
+            <include name="PurchaseOrder"/>
+        </run>
+    </groups>
+
+    <test name="Submit Order Test" thread-count="5">
+        <classes>
+            <class name="frameworkPractice.Tests.SubmitOrderTest"/>
+        </classes>
+    </test>
+
+    <test name="Error Validation Test" thread-count="5">
+        <classes>
+            <class name="frameworkPractice.Tests.ErrorValidationTest"/>
+        </classes>
+    </test>
+</suite>
